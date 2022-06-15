@@ -7,6 +7,6 @@ async function bootstrap() {
   const app = await NestFactory.create(MessagesModule);
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(PORT);
-  console.log('running at localhost:', PORT);
+  console.log('running at localhost: ', PORT);
 }
 bootstrap();
